@@ -1,0 +1,18 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+# 本文件是用于校验提交之前，对代码在做一层校验。
+# 它会根据 package.json 中的配置，如下。
+# "lint-staged": {
+#     "*.(js|ts|tsx|jsx)": [
+#       "prettier --write",
+#       "./node_modules/.bin/eslint --fix",
+#       "./node_modules/.bin/eslint"
+#     ],
+#     "*.(css|less|scss)": [
+#       "prettier --write"
+#     ]
+#   }
+# npx lint-staged
+# yarn lint-staged
+npx lint-staged 
+# --allow-empty "$1"

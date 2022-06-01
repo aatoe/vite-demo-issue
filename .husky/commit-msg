@@ -1,0 +1,4 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+# 使用 .commitlintrc 校验我们的项目，也就是对我们提交 msg 描述做一些规范，规范参考 commitlintrc。
+npx --no-install commitlint --edit ""

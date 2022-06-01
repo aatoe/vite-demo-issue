@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= require('./meta.html?raw') %>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+
+    <title>房企抖音榜|直播榜|短视频榜</title>
+    <script src="__OSS_HOST__/__YUNKE_ENV__/environment.js"></script>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <script>
+      <%= require('../node_modules/amfe-flexible/index.js?raw') %>
+    </script>
+    <!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
